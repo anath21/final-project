@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             propertyCard.appendChild(propertyLink);
   
             const propertyImage = document.createElement("img");
-            propertyImage.src = `/images/${property.img}`;
+            propertyImage.src = `/images/${property.img_name}`;
             propertyImage.onclick = () => {
                 console.log("Property clicked:", property);
                 displayPropertyDetails(property);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p.innerHTML = property.description;
     
         const img = document.createElement("img");
-        img.src = `/images/${property.img}`;
+        img.src = `/images/${property.img_name}`;
         img.alt = property.address;
         img.style.maxWidth = "350px";
         img.style.maxHeight = "300px";
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
         const schoolList = document.createElement("ul");
-        property.nearbySchools.forEach((school) => {
+        property.nearby_schools.forEach((school) => {
             const li = document.createElement("li");
             li.textContent = school;
             schoolList.appendChild(li);
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
         form.bathrooms.value = property.bathrooms;
         form.sqft.value = property.sqft;
         form.price_estimate.value = property.price_estimate;
-        document.getElementById("img-prev").src = `/images/${property.img}`;
+        document.getElementById("img-prev").src = `/images/${property.img_name}`;
         populateNearbySchools(property.nearby_schools);
         } else {
             console.log("property is undefined");

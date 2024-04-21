@@ -129,6 +129,7 @@ app.delete("/api/properties/:id", async (req, res) => {
 function validateProperty(property) {
   const schema = Joi.object({
     //img_name: Joi.string(),
+    _id : Joi.allow(""),
     address: Joi.string().min(3).required(),
     description: Joi.string().min(3).required(),
     bedrooms: Joi.number().integer().min(1).required(),

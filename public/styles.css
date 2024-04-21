@@ -1,0 +1,408 @@
+:root {
+  --background-color: white;
+  --nav-color: #EFCA74;
+  --a-color: black;
+  --header-color: tan;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header {
+    display: flex;
+    padding-bottom: 20px;
+    background: var(--header-color);
+  }
+
+  #main {
+    background: var(--header-color);
+  }
+
+  #logo,
+  #title,
+  #icon {
+    flex: 1;
+    display: block;
+    justify-content: space-evenly
+  }
+  
+  #page1 {
+    background-color: var(--background-color);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  a {
+    color: var(--a-color);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  #main-nav ul {
+    background-color: var(--nav-color);
+  }
+  
+  #nav-items li {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #hamburger {
+    padding: 10px;
+  }
+  
+  #hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--a-color);
+    margin: 6px 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #main-image {
+    max-width: 100%;
+    padding-top: 10px;
+  }
+
+  #ankit-nath {
+    max-width: 350px;
+  }
+
+  #featured-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #top-one,
+  #top-two,
+  #top-three,
+  #top-four {
+    flex: 1;
+    margin-top: 50px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .newImg {
+      flex: 1;
+      margin-top: 50px;
+      padding-top: 5px;
+      text-align: center;
+    }
+
+  #about-content {
+    display: flex;
+    padding-top: 10px;
+  }
+
+  #about-image,
+  #about-me {
+    flex: 50%;
+    max-width: 100%;
+  }
+
+  #about-image img{
+    max-width: 100%;
+  }
+
+  #about-header {
+    text-align: center;
+  }
+
+  #scarlet-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  #scarlet-right-bottom {
+    display: flex;
+  }
+
+  #scarlet-right-bottom-content {
+    flex: 1;
+    border: 1px solid var(--a-color);
+  }
+
+  #address {
+    text-align: center;
+  }
+
+  #SC-header {
+    text-align: center;
+  }
+
+  #investment-header {
+    padding-top: 15px;
+  }
+
+  #review {
+    padding-right: 20px;
+  }
+
+  .property-listing {
+    
+    margin-bottom: 20px;
+  }
+  
+  .property-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  .property-details {
+    flex: 1;
+  }
+  
+  .property-address {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .property-description {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: var(--a-color) 2px solid;
+  }
+  
+  .property-info {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .property-info li {
+    margin-bottom: 5px;
+  }
+  
+  .school-header {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .school-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .school-list li {
+    margin-bottom: 5px;
+  }
+
+  #add-house-btn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .popup {
+    background-color: var(--nav-color);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 10px; /* Adjust padding as needed */
+    border: 2px solid var(--a-color);
+    display: none; /* Initially hide the popup */
+  }
+
+
+#house-form {
+  margin: 5px;
+}
+
+#add-link {
+  font-size: 0.8em;
+  color: #401e01;
+  border: 2px solid #401e01;
+  padding: 0 4px;
+}
+
+  
+  @media screen and (min-width: 768px) {
+    #hamburger {
+      display: none;
+    }
+  
+    .flex-container {
+      display: flex;
+    }
+  
+    #main-nav li {
+      flex: 1;
+    }
+  
+    #nav-items {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      justify-content: space-evenly;
+    }
+
+    #main-content {
+      display: flex;
+    }
+  
+    #home-image {
+      flex: 60%;
+    }
+  
+    #home-text {
+      padding-left: 10px;
+      flex: 40%
+    }
+
+    #scarlet-content {
+      display: flex;
+      padding-top: 10px;
+    }
+  
+    #scarlet-left,
+    #scarlet-right,
+    #spartan-right,
+    #spartan-left {
+      padding: 5px;
+      flex: 1;
+    }
+  
+
+    #main-image {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+
+    #featured-top-row {
+      display: flex;
+    }
+
+    #about-top {
+      display: flex;
+      padding-top: 10px;
+    }
+  
+    #about-image,
+    #about-me {
+      flex: 50%;
+    }
+
+    #about-me {
+      padding-left: 10px;
+    }
+
+    #contact {
+      padding-top: 20px;
+    }
+
+    #review {
+      padding-top: 20px;
+    }
+  }
+
+
+  /* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 999; /* ensure the overlay is above everything else */
+  display: none; /* initially hidden */
+}
+
+/* Modal dialog box */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* ensure the modal is above the overlay */
+  display: none; /* initially hidden */
+}
+
+/* Modal close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.modal-image {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+
+.modal-content {
+  color: #333; 
+  display: flex;
+}
+
+.modal-image {
+  width: 150px; 
+  height: 150px; 
+  margin-right: 20px; 
+  flex: 1;
+}
+
+.modal-text {
+  flex: 1; 
+}
+
+#img-prev-section {
+  width: 100px;
+  border: 1px solid #401e01;
+  max-width: 100px;
+  margin-right: 5px;
+}
+#img-prev {
+  padding: 2.5%;
+  display: block;
+  margin: auto;
+  max-width: 95%;
+}
+
+
+#edit-link {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+#delete-link {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}

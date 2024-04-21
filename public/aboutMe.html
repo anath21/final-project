@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ankit Nath Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="page1">
+    <div id="main">
+        <div class="header">
+            <section id="logo">
+                <a href="index.html"><img src="images/ankitnathlogo.png" width="150" height="100"></a>
+            </section>
+            <section id="title">
+                <h1>Ankit Nath Real Estate</h1>
+            </section>
+            <section id="icon">
+                <img src="images/loginIcon.png" width="150" height="75">
+            </section>
+        </div>
+        <nav id="main-nav">
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="flex-container hide">
+            <a href="index.html"><li job="nav">Home</li></a>
+            <a href="featuredListings.html"><li>Featured Listings</li></a>
+            <a href="listingsSC.html"><li>Listings In SC</li></a>
+            <a href="investment.html"><li>Investment Properties</li></a>
+            <a href="aboutMe.html"><li>About Me</li></a>
+        </ul>
+        </nav>
+        <div id="about-content">
+            <div id="about-top">
+                <div id="about-image">
+                    <img src="images/carousel2.jpg">
+                </div>
+                <div id="about-me">
+                    <h3 id="about-header">About Me:</h3>
+                    <p>
+                        Hi there, I'm Ankit Nath, the driving force behind Ankit Nath Real Estate. Real estate isn't just a profession for me - it's a passion.
+                    </p>
+                    <p>
+                        Growing up, I've always been fascinated by the idea of homes—their unique architecture, their stories, and the memories they hold. This 
+                        fascination eventually led me to pursue a career in real estate, where I could combine my love for homes with my desire to help people
+                        find their perfect space.
+                    </p>
+                    <p>
+                        With 5 years of experience in the industry, I've had the privilege of working with clients from all walks of life. From assisting first-time 
+                        homebuyers in finding their starter home to guiding seasoned investors in expanding their portfolios, each interaction has been incredibly rewarding.
+                    </p>
+                    <div id="contact">
+                        <h3 id="about-header">Contact Me:</h3>
+                        <div class="columns">
+                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                              <input type="hidden" name="access_key" value="9fbbf79e-f801-42b9-99ad-f4aabe76afe8">
+                              <p>
+                                <label for="name">Name:</label>
+                                <input id="name" type="text" placeholder="Please Enter First & Last" name="name" required>
+                              </p>
+                              <p>
+                                <label for="email">Email:</label>
+                                <input id="email" type="email" name="email" required >
+                              </p>
+                              <p>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                              </p>
+                              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                              <input type="hidden" name="subject" value="Email from Ankit Nath Real Estate">
+                              <input type="hidden" name="from_name" value="My Website" >
+                    
+                              <p>
+                                <button id="submit" type="submit">Submit Request</button>
+                              </p>
+                    
+                              <p id="result"> </p>
+                            </form>
+                            <div>
+                                <p id="review">
+                                    Please Leave a Review:<input type="text"> 
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

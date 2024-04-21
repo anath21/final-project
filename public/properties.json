@@ -1,0 +1,57 @@
+[
+    {
+      "_id": 1,
+      "img_name": "105scarlet.jpeg",
+      "address": "105 Scarlet Oak Way",
+      "description": "2 year old executive home in sought after neighborhood. Hardi Board. Best Lexington schools. Formal entry foyer,open floor plan, high ceilings. Heritage Cherry Gourmet Kitchen w. island, double oven, gas cook top, stainless steel appl. Bay window in large MBR. with huge closet,3 br down, teenage/guest suite w. full bath up.Large sun room backs to woods. New stylish built-ins around fireplace. Stunning dining room. Butler's Pantry and pantry. Beautiful color choices. Deck. Home warranty. Walking distance to pool and playground.",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 3213,
+      "price_estimate": "$483,100",
+      "nearby_schools": [
+        {
+          "name": "Meadow Glen Elementary",
+          "grades": "k-5",
+          "distance": "0.7 miles"
+        },
+        {
+          "name": "Meadow Glen Middle",
+          "grades": "6-8",
+          "distance": "1 mile"
+        },
+        {
+          "name": "River Bluff High",
+          "grades": "9-12",
+          "distance": "2.4 miles"
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "img_name": "240spartan.jpg",
+      "address": "240 Spartan Drive",
+      "description": "The seller will cover all buyer closing cost and provide 12 month home warranty! Welcome to Columbia, South Carolina! Feast your eyes on this 2 of 3 custom new built home. These new homes are only 3 minutes from Lake Murray and right in the backyard of Saluda Shoals Park! HOA fees are only $30/year. Each home is completed with Luxury Samsung appliances and fixtures. This is a perfect starter home for any family. Quiet neighborhood and Great Neighbors!",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 3213,
+      "price_estimate": "$483,100",
+      "nearby_schools": [
+        {
+          "name": "Leaphart Elementary",
+          "grades": "Pk-5",
+          "distance": "0.6 miles"
+        },
+        {
+          "name": "Irmo Middle School",
+          "grades": "6-8",
+          "distance": "1.6 miles"
+        },
+        {
+          "name": "Irmo High School",
+          "grades": "9-12",
+          "distance": "1.2 miles"
+        }
+      ]
+    }
+  ]
+  

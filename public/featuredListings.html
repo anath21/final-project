@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ankit Nath Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body id="page1">
+<div id="main">
+    <div class="header">
+        <section id="logo">
+            <a href="index.html"><img src="images/ankitnathlogo.png" width="150" height="100"></a>
+        </section>
+        <section id="title">
+            <h1>Ankit Nath Real Estate</h1>
+        </section>
+        <section id="icon">
+            <img src="images/loginIcon.png" width="150" height="75">
+        </section>
+    </div>
+    <nav id="main-nav">
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="flex-container hide">
+            <a href="index.html"><li job="nav">Home</li></a>
+            <a href="featuredListings.html"><li>Featured Listings</li></a>
+            <a href="listingsSC.html"><li>Listings In SC</li></a>
+            <a href="investment.html"><li>Investment Properties</li></a>
+            <a href="aboutMe.html"><li>About Me</li></a>
+        </ul>
+    </nav>
+    <div id="featured-content">
+        <h1 id="header">Featured Property Listings <a href="#" id="add-link">+</a></h1>
+        <div id="dialog" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('dialog').style.display='none'"
+                          class="w3-button w3-display-topright">&times;</span>
+                    <section id="dialog-details">
+                        <form id="add-property-form" method="post" class="hidden">
+                            <input type="hidden" name="_id" value="">
+                            <p>
+                                <label for="address">Property Address:</label>
+                                <input type="text" id="address" name="address" minlength="3" required />
+                            </p>
+                            <p>
+                                <label for="description">Description:</label>
+                                <input type="text" id="description" name="description" minlength="3" required />
+                            </p>
+
+                            <section class="columns">
+                                <p id="img-prev-section">
+                                    <img id="img-prev">
+                                </p>
+                                <p>
+                                    <label for="img">Upload Image:</label>
+                                    <input type="file" id="img" name="img" accept="image/*" />
+                                </p>
+                            </section>
+
+                            <p>
+                                <label for="bedrooms">Bedrooms:</label>
+                                <input type="number" id="bedrooms" name="bedrooms" min="1" required />
+                            </p>
+                            <p>
+                                <label for="bathrooms">Bathrooms:</label>
+                                <input type="number" id="bathrooms" name="bathrooms" min="1" required />
+                            </p>
+                            <p>
+                                <label for="sqft">Square Feet:</label>
+                                <input type="number" id="sqft" name="sqft" min="1" required />
+                            </p>
+                            <p>
+                                <label for="price_estimate">Price Estimate:</label>
+                                <input type="text" id="price_estimate" name="price_estimate" min="1" required />
+                            </p>
+                            <p id="nearby-schools-p">
+                                <label class="inline">Nearby Schools:</label>
+                                <a href="#" id="add-school">Add Schools</a>
+                                <section id="nearby-schools-boxes"></section>
+                            </p>
+                            <p>
+                                <button type="submit">Submit</button>
+                                <button id="cancel-button" type="button">Cancel</button>
+                            </p>
+                        </form>
+
+                        <section id="property-details" class="hidden">
+
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Existing Featured Listings -->
+        <div id="featured-top-row">
+            <section id="top-one">
+                <a href="scarletOak.html"><img src="images/105scarlet.jpeg"></a>
+                <p>105 Scarlet Oak Way</p>
+            </section>
+            <section id="top-two">
+                <img src="images/105scarlet.jpeg">
+                <p>220 Valkyrie Blvd</p>
+            </section>
+            <section id="top-three">
+                <img src="images/105scarlet.jpeg">
+                <p>113 longleaf Drive</p>
+            </section>
+            <section id="top-four">
+                <img src="images/105scarlet.jpeg">
+                <p>105 Scarlet Oak Way</p>
+            </section>
+        </div>
+        <!--
+        <div id="featured-top-row">
+            <section id="top-one">
+                <img src="images/105scarlet.jpeg">
+                <p>4300 N Ocean Blvd</p>
+            </section>
+            <section id="top-two">
+                <img src="images/105scarlet.jpeg">
+                <p>974 Old Chaipin Rd</p>
+            </section>
+            <section id="top-three">
+                <img src="images/105scarlet.jpeg">
+                <p>136 Rustic Manor Ct</p>
+            </section>
+            <section id="top-four">
+                <img src="images/105scarlet.jpeg">
+                <p>105 Morning Shore Ct</p>
+            </section>
+        </div>
+    -->
+
+    <div id="gallery-container"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="featuredScript.js"></script>
+</body>
+</html>

@@ -65,7 +65,7 @@ const toggleHamburger = () => {
 
 
   const showEmailResult = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     let response = await getEmailResult();
 
@@ -76,10 +76,9 @@ const toggleHamburger = () => {
     }
 };
 
-const result = document.getElementById("result"); 
+const result = document.getElementById("result");
 
-const getEmailResult = async (e) => {
-  e.preventDefault();
+const getEmailResult = async () => {
     const form = document.getElementById("contact-form");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
@@ -103,9 +102,7 @@ const getEmailResult = async (e) => {
     }
 };
 
-//const submit = document.getElementById("submit");
-//document.getElementById("submit").onsubmit = showEmailResult;
+document.getElementById("contact-form").addEventListener('submit', showEmailResult);
 
-//submit.addEventListener('onsubmit',showEmailResult());
 
 });

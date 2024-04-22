@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             propertyCard.appendChild(propertyLink);
   
             const propertyImage = document.createElement("img");
-            propertyImage.src = `/images/${property.img_name}`;
+            propertyImage.src = `/${property.img}`;
             propertyImage.onclick = () => {
                 console.log("Property clicked:", property);
                 displayPropertyDetails(property);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p.innerHTML = property.description;
     
         const img = document.createElement("img");
-        img.src = `/images/${property.img_name}`;
+        img.src = `/${property.img}`;
         img.alt = property.address;
         img.style.maxWidth = "350px";
         img.style.maxHeight = "300px";
@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const schoolList = document.createElement("ul");
         property.nearby_schools.forEach((school) => {
             const li = document.createElement("li");
+            const h4 = document.createElement("h4");
+            h4.textContent = "Nearby Schools";
             li.textContent = school;
             schoolList.appendChild(li);
         });
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
         form.bathrooms.value = property.bathrooms;
         form.sqft.value = property.sqft;
         form.price_estimate.value = property.price_estimate;
-        document.getElementById("img-prev").src = `/images/${property.img_name}`;
+        document.getElementById("img-prev").src = `/${property.img}`;
         populateNearbySchools(property.nearby_schools);
         } else {
             console.log("property is undefined");
@@ -115,9 +117,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         
         // const section = document.getElementById("nearby-schools-boxes");
-        // section.innerHTML = ""; // Clear existing content
+        // section.innerHTML = ""; 
     
-        // // Check if schools is an array before iterating
         // if (Array.isArray(schools)) {
         //     schools.forEach((school) => {
         //         const input = document.createElement("input");
@@ -224,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // resetForm();
     
         // const modal = document.getElementById("dialog");
-        // modal.style.display = "block"; // Show the modal
+        // modal.style.display = "block"; 
     };
     
   

@@ -214,9 +214,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px; 
     border: 2px solid var(--a-color);
-    display: none; /* Initially hide the popup */
+    display: none; 
   }
 
 
@@ -312,33 +312,34 @@ body {
   }
 
 
-  /* Modal overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  z-index: 999; /* ensure the overlay is above everything else */
-  display: none; /* initially hidden */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  display: none; 
 }
 
-/* Modal dialog box */
+.w3-container {
+  background-color: #f5d5a1;
+}
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #FFFDD0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* ensure the modal is above the overlay */
-  display: none; /* initially hidden */
+  z-index: 1000; 
+  display: none;
 }
 
-/* Modal close button */
 .close {
   position: absolute;
   top: 10px;
@@ -352,8 +353,6 @@ body {
   color: black;
   text-decoration: none;
 }
-
-
 
 .modal-image {
   width: 200px;
@@ -406,3 +405,25 @@ body {
   z-index: 2;
   position: relative;
 }
+
+.hidden {
+  display: none;
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.gallery-item {
+  flex: 0 0 calc(25% - 8px); 
+  max-width: calc(25% - 8px); 
+  margin: 4px; 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
